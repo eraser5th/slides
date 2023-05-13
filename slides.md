@@ -46,7 +46,7 @@ title: Feature driven folder structureは何を解決する？
 - Neovim、Wezterm、綺麗なコードを考える
 - Vtuber、スプラ、EGOIST
 
-<img src="Slack_Icon_20220507_circle.png" />
+<img src="/Slack_Icon_20220507_circle.png" />
 
 <!--
 あほい
