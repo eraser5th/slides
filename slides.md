@@ -1,17 +1,11 @@
 ---
-theme: seriph
+theme: dracula
 class: text-center
 highlighter: shiki
 lineNumbers: false
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
 drawings:
   persist: false
 transition: slide-left
-css: unocss
 presenter: true
 title: Feature driven folder structure
 ---
@@ -19,7 +13,6 @@ title: Feature driven folder structure
 # Feature driven folder structureは何を解決する？
 
 ## 2023春大LT
-
 ## 学部 3年 ERASER（加藤 豪）
 
 <div class="pt-12">
@@ -53,28 +46,35 @@ title: Feature driven folder structure
 - Neovim、Wezterm、綺麗なコードを考える
 - Vtuber、スプラ、EGOIST
 
+<img src="Slack_Icon_20220507_circle.png" />
+
 <!--
 あほい
 -->
 
+<style>
+img {
+  position: absolute;
+  top: 48px;
+  right: 48px;
+  width: 120px;
+  height: 120px;
+}
+</style>
+
 ---
 
-# 今回のお話
+# 前置き（先に言い訳）
 
-みんな大好き、非常に香ばしい「良いコード」について
+<br>
 
-タイトルの通り、Feature driven folder structureについてです。
-
-ただし、自分はまだいくつかの記事を読み合わせただけで実際に使った経験があるわけではありません。
-
-ですので、経験に基づいた話というよりかは記事の受け売りという感じが強いです。
+本日話すことについては経験に基づいた話ではなく記事の受け売りという感じが強いです。
 
 が、手探りながらもきちんと扱えるという浅い考えのもとお話しいたします。
 
 <br>
 
 もし適当なことを言っていたりしたら、シメていただけると泣いて喜びます。
-
 
 ---
 
@@ -113,7 +113,7 @@ src/
 
 <br>
 
-**アンチパターン「技術駆動パッケージング」** の一例です
+これは**アンチパターン「技術駆動パッケージング」** の一例です
 
 ```
 src/
@@ -191,6 +191,12 @@ pages(もしくは他の大きなコンポーネント)から呼び出される�
 ですがここで、先程後回しにしていた問題についてこれも併せて考えてみます。
 -->
 
+<style>
+code {
+  background: rgb(22, 23, 29);
+}
+</style>
+
 ---
 
 # 技術駆動パッケージングの問題点
@@ -213,7 +219,7 @@ src/
 ...
 ```
 
-- ログインのhookとcomponentとpageがバラバラの場所にあり、把握がしずらい
+- ログインのフックとコンポーネントとページがバラバラの場所にあり、把握がしずらい
 
 ---
 
@@ -234,8 +240,19 @@ src/
 ...
 ```
 
-- `button`と`login-form`が同じレイヤにいて、`components`の抽象度がバラバラ。
+- `button`と`login-form`が同じレイヤにいるなど、`components`の抽象度がバラバラ。
 - 用途の全く違う`login-form`と`user-profile-card`が同じパッケージ（ディレクトリ）にいる。
+
+<!--
+ahoy
+あほい
+-->
+
+<style>
+code {
+  background: rgb(22, 23, 29) !important;
+}
+</style>
 
 ---
 
@@ -246,14 +263,24 @@ src/
 これらの問題を生み出すものの名前なんというか、我々は知っています。  
 凝集度です。
 
-凝集度の問題だと分かれば見えてくるものもあります。  
-`components`の凝集度はどれに当たるでしょう?
+となると`components`の凝集度はどれに当たるでしょう?
 
 おそらくは最低最悪の偶発的凝集です。
 
 <span class="color-gray-500">
   凝集度については説明は省きます（一人大LTになってしまう）
 </span>
+
+<!--
+ahoy
+あほい
+-->
+
+<style>
+code {
+  background: rgb(22, 23, 29) !important;
+}
+</style>
 
 ---
 
@@ -319,6 +346,7 @@ layout: center
 ---
 
 # Re:
+
 # Feature driven folder structure は何を解決する？
 
 ---
@@ -336,3 +364,9 @@ layout: center
 # fin
 
 ご清聴ありがとうございました！
+
+# 参考記事
+
+[Screaming Architecture - Evolution of a React folder structure](https://dev.to/profydev/screaming-architecture-evolution-of-a-react-folder-structure-4g25)
+
+[Screaming Architecture](https://blog.cleancoder.com/uncle-bob/2011/09/30/Screaming-Architecture.html)
