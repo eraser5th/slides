@@ -7,7 +7,7 @@ drawings:
   persist: false
 transition: slide-left
 presenter: true
-title: Feature driven folder structure
+title: Feature driven folder structureは何を解決する？
 ---
 
 # Feature driven folder structureは何を解決する？
@@ -31,14 +31,14 @@ title: Feature driven folder structure
 
 - 加藤 豪
 - 会津大学 学部３年
-- [Twitter](https://twitter.com/eraser5th), [GitHub](https://github.com/eraer5th)
+- [Twitter](https://twitter.com/eraser5th), [GitHub](https://github.com/eraser5th)
 - [ポートフォリオ](https://eraser5th.dev)
 
 技術
 
 - 言語：JS・TS、CSS、HTML、Lua、Rust(簡単な競プロ)、Haskell(勉強中)
 - Webフロント：React.js、Next.js、GraphQL(Apollo Client)、CSS-in-JS
-- バックエンド：Node.js、Prisma、
+- バックエンド：Node.js、Prisma(ORM)、
 - ツール：Git・GitHub、Figma
 
 好きなもの
