@@ -80,6 +80,8 @@ img {
 
 機能駆動のフォルダ構造です（翻訳しただけ）。
 
+---
+
 # Feature driven folder structureは何を解決する？
 
 <br>
