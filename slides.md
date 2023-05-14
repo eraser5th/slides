@@ -57,14 +57,16 @@ img {
   position: absolute;
   top: 48px;
   right: 48px;
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
 }
 </style>
 
 ---
 
 # 前置き
+
+<br>
 
 今回のお話はマサカリの飛びやすい分野だと思います。
 
@@ -78,37 +80,37 @@ img {
 
 機能駆動のフォルダ構造です（翻訳しただけ）。
 
+# Feature driven folder structureは何を解決する？
+
+<br>
+
 これが何を解決するのか？  
 それについて考えていくのが今回のお話です。
 
-ですのでここで結論をネタバレするのはやめておきます。
-
 ---
 
 # こんなReactのコードベース、見たことない？
 
 <br>
+
+```
+src/
+├ components/
+├ context/
+├ hooks/
+├ pages/
+├ lib/
+└ App.ts
+```
 
 よくある、かは知らないが、僕がこれまでよくやっていたReactのコードベース
 
-```
-src/
-├ components/
-├ context/
-├ hooks/
-├ pages/
-├ lib/
-└ App.ts
-```
-
 ---
 
 # こんなReactのコードベース、見たことない？
 
 <br>
 
-これは**アンチパターン「技術駆動パッケージング」** の一例です
-
 ```
 src/
 ├ components/
@@ -118,6 +120,12 @@ src/
 ├ lib/
 └ App.ts
 ```
+
+これは**アンチパターン「技術駆動パッケージング」** の一例です
+
+<!--
+バックエンドなどであれば、レイヤー度アーキテクチャなどでレイヤーごとのフォルダをつくるようなものを指します。
+-->
 
 ---
 layout: center
@@ -234,8 +242,8 @@ src/
 ...
 ```
 
-- `button`と`login-form`が同じレイヤにいるなど、`components`の抽象度がバラバラ。
-- 用途の全く違う`login-form`と`user-profile-card`が同じパッケージ（ディレクトリ）にいる。
+- `button`と`login-form`が同じレイヤにいるなど、`components`の抽象度がバラバラ
+- 用途の全く違う`login-form`と`user-profile-card`が同じパッケージ（ディレクトリ）にいる
 
 <!--
 ahoy
@@ -349,10 +357,9 @@ layout: center
 
 <!--
 FDFSが何を解決するのか。  
-それは解決した結果FDFSになったんだから当然凝集度です。
+それは解決した結果FDFSになったんだから当然凝集度です。(たぶん)
 （他にもあるのかもしれないけど、それについては知らないです）
 -->
-
 
 ---
 layout: center
