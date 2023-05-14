@@ -80,6 +80,21 @@ img {
 
 機能駆動のフォルダ構造です（翻訳しただけ）。
 
+```
+src/
+└ features/
+  ├ login/
+    ├ use-login.ts
+    ├ login-page.tsx
+    └ login-form.tsx
+  ├ ui/
+    ├ button.tsx
+    ├ card.tsx
+    └ ...
+  └ ...
+...
+```
+
 ---
 
 # Feature driven folder structureは何を解決する？
